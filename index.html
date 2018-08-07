@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/48938155eb24b4ccdde09426066869504c6dab3c/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/style/style.css">
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq06l5RUVfib62IYRQacLc-KAy0XIWAVs"></script>
+      <script src="node_modules/requirejs/require.js"></script>
+  </head>
+  <body>
+    <div class="not-a-container">
+        <form>
+            <h3>Upload csv</h3>
+            <input id="fileinput" type="file" />
+
+            <h3>CSV table</h3>
+
+            <table class="table table-striped" id="tabled">
+                <thead id="thead"></thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </form>
+    </div>
+  </body>
+  <script src="src/scripts/sort.js"></script>
+  <script src="src/main.js"></script>
+</html>
